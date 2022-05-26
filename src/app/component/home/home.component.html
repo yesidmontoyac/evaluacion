@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="area">
+        <div class="container-table">
+            <h1>Sistema de Evaluacion</h1>
+            <!-- <button id="boton-table" type="button" class="btn btn-primary">Nueva evaluacion</button> -->
+            <table class="table table-dark" style="background: #212121 !important; --bs-table-bg: #212121">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Proyecto</th>
+                        <th scope="col">Fecha inicio</th>
+                        <th scope="col">Fecha fin</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Software 1</td>
+                        <td>2021/05/0</td>
+                        <td>2021/05/30</td>
+                        <td>Configuración de evaluación</td>
+                        <td>
+                            <button type="button" class="btn btn-primary">Editar</button>
+                            <button type="button" class="btn btn-danger" style="margin-left: 10px;"
+                                (click)="AlertEliminar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Software 2</td>
+                        <td>2021/05/01</td>
+                        <td>2021/04/30</td>
+                        <td>Proceso de calificación</td>
+                        <td>
+                            <button type="button" class="btn btn-primary">Editar </button>
+                            <button type="button" class="btn btn-danger" style="margin-left: 10px;"
+                                (click)="AlertEliminar()">Eliminar </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <app-menu></app-menu>
+</body>
+
+</html>
