@@ -19,11 +19,15 @@
                     <button class="nav-link" id="nav-evaluacion-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-evaluacion" type="button" role="tab" aria-controls="nav-evaluacion"
                         aria-selected="false">Metricas</button>
+                    <button class="nav-link" id="nav-participante-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-participante" type="button" role="tab" aria-controls="nav-participante"
+                        aria-selected="false">Participantes & Actividades</button>
                     <button class="nav-link" id="nav-calificacion-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-calificacion" type="button" role="tab" aria-controls="nav-calificacion"
                         aria-selected="false">Evaluacion</button>
+                        
                     <button class="nav-link" id="nav-resultado-tab" data-bs-toggle="tab" data-bs-target="#nav-resultado"
-                        type="button" role="tab" aria-controls="nav-resultado" aria-selected="false">resultado</button>
+                        type="button" role="tab" aria-controls="nav-resultado" aria-selected="false">Resultado</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -137,7 +141,7 @@
                                         <td>Requerimiento 2</td>
                                         <td>2021/05/01</td>
                                         <td>2021/04/30</td>
-                                        <td>Descripcion Requerimienton</td>
+                                        <td>Descripcion Requerimiento</td>
                                         <td>
                                             <button type="button" class="btn btn-primary">Editar </button>
                                             <button type="button" class="btn btn-danger"
@@ -168,14 +172,10 @@
                             <div class="cuadro">
                                 <label>Nombre de la Metrica</label>
                                 <input type="text" style="width: 400px;">
-                                <label>Porcentaje de la metrica</label>
+                                <label>Calificasion de la metrica</label>
                                 <input type="text" style="width: 400px;">
-                                <label>Tipo de metricas</label>
-                                <select class="form-select" style="width: 400px;">
-                                    <option>Tipo de Metrica 1</option>
-                                    <option>Tipo de Metrica 2</option>
-                                    <option>Tipo de Metrica 3</option>
-                                </select>
+                                <label>Descripcion de la metrica</label>
+                                <input type="text" style="width: 400px;">
                             </div>
                         </div>
                         <div class="container-botones">
@@ -193,20 +193,18 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Proyecto</th>
-                                        <th scope="col">Fecha inicio</th>
-                                        <th scope="col">Fecha fin</th>
-                                        <th scope="col">Estado</th>
+                                        <th scope="col">Metricas</th>
+                                        <th scope="col">Fecha de creacion</th>
+                                        <th scope="col">Descripcion</th>
                                         <th scope="col">Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>Software 1</td>
-                                        <td>2021/05/0</td>
-                                        <td>2021/05/30</td>
-                                        <td>Configuración de evaluación</td>
+                                        <td>Metrica 1</td>
+                                        <td>2021/05/02</td>
+                                        <td>Descripcion 1</td>
                                         <td>
                                             <button type="button" class="btn btn-primary">Editar</button>
                                             <button type="button" class="btn btn-danger"
@@ -215,10 +213,9 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
-                                        <td>Software 2</td>
+                                        <td>Mestrica 2</td>
                                         <td>2021/05/01</td>
-                                        <td>2021/04/30</td>
-                                        <td>Proceso de calificación</td>
+                                        <td>Descripcion 2</td>
                                         <td>
                                             <button type="button" class="btn btn-primary">Editar </button>
                                             <button type="button" class="btn btn-danger"
@@ -245,29 +242,97 @@
                         <div class="list-group-item list-group-item-action" style="border: 1px solid #5c5959;">
                             <div class="contenido-list">
                                 <input type="checkbox" style="margin-right: 20px;">
-                                <label> <b>Usabilidad </b> La capacidad del producto software de ser entendido,
-                                    aprendido, usado y atractivo al usuario, cuando es usado bajo las condiciones
-                                    especificadas. </label>
+                                <label> <b>Portabilidad </b> La capacidad del software para ser trasladado de un entorno a otro. </label>
                             </div>
                         </div>
 
                         <div class="list-group-item list-group-item-action" style="border: 1px solid #5c5959;">
                             <div class="contenido-list">
                                 <input type="checkbox" style="margin-right: 20px;">
-                                <label> <b>Usabilidad </b> La capacidad del producto software de ser entendido,
-                                    aprendido, usado y atractivo al usuario, cuando es usado bajo las condiciones
-                                    especificadas. </label>
+                                <label> <b>Seguridad </b> La capacidad del producto de software para proveer las funciones que satisfacen las necesidades explícitas e implícitas cuando el software se utiliza bajo condiciones específicas. </label>
                             </div>
                         </div>
                     </div>
 
                 </div>
+
+
+
+
+
+
+                <div class="tab-pane fade" id="nav-participante" role="tabpanel" aria-labelledby="nav-participante-tab">
+                    <div class="list-group" style=" margin: 20px;">
+                        <div class="center">
+                            <div class="cuadro">
+                                <label>Nombre del Participante</label>
+                                <input type="text" style="width: 400px;">
+                                <label>Actividad</label>
+                                <input type="text" style="width: 400px;">
+                                <label>Descripcion de la Actividad</label>
+                                <input type="text" style="width: 400px;">
+                            </div>
+                        </div>
+                        <div class="container-botones">
+                            <button type="button" class="btn btn-danger">cancelar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                    <div class="container-table center">
+                        <!-- <button id="boton-table" type="button" class="btn btn-primary">Nueva evaluacion</button> -->
+                        <table class="table table-dark"
+                            style="background: #212121 !important; --bs-table-bg: #212121">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Participantes</th>
+                                    <th scope="col">Actividad</th>
+                                    <th scope="col">Descripcion</th>
+                                    <th scope="col">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Lucho Diaz</td>
+                                    <td>Actividad 1</td>
+                                    <td>Descripcion Actividad</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger"
+                                            style="margin-left: 10px;">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Karim Benzema</td>
+                                    <td>Actividad 2</td>
+                                    <td>Descripcion Actividad</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editar </button>
+                                        <button type="button" class="btn btn-danger"
+                                            style="margin-left: 10px;">Eliminar </button>
+                                    </td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" style="    margin-left: 1280px;">Descargar Lista de Participantes</button>
+                </div>
+
+                
+
+
+
+
                 <div class="tab-pane fade" id="nav-resultado" role="tabpanel" aria-labelledby="nav-resultado-tab">
                     <div class="container-resul">
                         <div class="container-hijo">
-                            <label for="">Nombre del producto</label>
+                            <label for="">Nombre del Poyecto</label>
                             <input type="text">
-                            <label for="">Descripción del producto</label>
+                            <label for="">Descripción del Poyecto</label>
                             <input type="text">
                         </div>
                         <hr>
@@ -297,7 +362,8 @@
                         <div class="grafica" style="display: flex;
                         flex-direction: column;
                         align-items: center;">
-                            <h2 class="titular">OS AUDIENCE STATS</h2>
+                            <h2 class="titular" style="
+                            padding-top: 60px;">Porcentaje de cumplimiento</h2>
                             <div class="donut-chart">
                                 <div id="porcion1" class="recorte">
                                     <div class="quesito ios" data-rel="21"></div>
@@ -312,9 +378,11 @@
                                     <div class="quesito linux" data-rel="9"></div>
                                 </div>
                                 <!-- END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
-                                <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>
+                                <p class="center-date"><br><span class="scnd-font-color"></span></p>
                             </div>
                         </div>
+
+                        <button type="button" class="btn btn-primary" style="    margin-left: 1280px;">Descargar Resultados</button>
                     </div>
                 </div>
             </div>
