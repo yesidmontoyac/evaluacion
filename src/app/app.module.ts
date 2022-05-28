@@ -23,4 +23,5 @@ import { EvaluacionComponent } from './component/evaluacion/evaluacion.component
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
